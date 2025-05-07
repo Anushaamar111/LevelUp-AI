@@ -2,3 +2,4 @@ langchain-google-genai
 streamlit
 langchain
 python-dotenv
+twilio
