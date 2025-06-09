@@ -44,4 +44,7 @@ Generate today's 1–3 tasks. Be specific and encouraging.""")
     ])
 
     chain = prompt | llm | output_parser
-    return chain.invoke({})
+    return chain.invoke({
+        "goal": "increase productivity",
+        "time_available": "3 hours"
+    })
